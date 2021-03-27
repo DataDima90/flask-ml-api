@@ -1,5 +1,26 @@
 # flask-ml-api
 
+## Building a Machine Learning Microservice using Flask, Gunicorn, Nginx and Docker
+
+Here we learn how machine learning models ca be deployed into production in a 
+dockerized environment using Flask, Gunicorn and Nginx in Python environment.
+
+**What we do:**
+1. We write a simple API and make it easily extendable using Flask Blueprints
+2. We make our Flask API production-ready using Gunicorn WSGI
+3. We set up the Flask API and Nginx inside docker
+4. We assemble our Docker Containers using docker-compose
+5. We test our Flask API using pytest
+
+**We cover the following frameworks:**
+- Flask
+- Gunicorn
+- Nginx
+- Docker
+- Docker-Compose
+- Pytest
+
+
 ## Setup
 
 ### Prerequisites
@@ -60,14 +81,11 @@ If succesful you should see a result like this:
 ```
 
 
-## How to start Docker and Docker-Compose
+## How to start Docker
 
 This repository contains Dockerfile and Docker Compose for a PostgreSQL database.
 
-1. Install Docker following the installation guide for your platform: https://docs.docker.com/engine/installation/
-
-2. Install Docker Compose following the installation guide for your platform: https://docs.docker.com/compose/install/
-
+Install Docker following the installation guide for your platform: https://docs.docker.com/engine/installation/
 
 #### Start building your docker image
 
@@ -85,7 +103,11 @@ docker run -p 5000:5000 flask-ml-api
 
 You should see your server boot up. With Postman you can again test the API via GET request.
 
-#### Start building your API with docker-compose
+## How to start docker-compose
+
+Install Docker Compose following the installation guide for your platform: https://docs.docker.com/compose/install/
+
+#### Start building your docker-compose yml file:
 
 Open a terminal and type: 
 
