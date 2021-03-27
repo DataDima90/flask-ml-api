@@ -115,3 +115,12 @@ Open a terminal and type:
 docker-compose build
 docker-compose up
 ```
+
+
+## How to test Flask API
+
+Just run:
+
+```
+python -m pytest
+```
